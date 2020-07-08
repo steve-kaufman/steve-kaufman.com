@@ -1,0 +1,31 @@
+{
+  "name": "steve-kaufman.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "pug": "^3.0.0",
+    "sass": "^1.26.10",
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently 'yarn sass' 'yarn pug' 'yarn serve'",
+    "sass": "sass --watch sass/index.sass:public/css/index.css",
+    "pug": "pug --watch ./templates -o ./public",
+    "serve": "serve public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steve-kaufman/steve-kaufman.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steve-kaufman/steve-kaufman.com/issues"
+  },
+  "homepage": "https://github.com/steve-kaufman/steve-kaufman.com#readme"
+}
