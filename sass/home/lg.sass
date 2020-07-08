@@ -1,0 +1,44 @@
+body#Home
+  @include lg
+    #page-main
+      height: 100vh
+      flex-direction: row
+      justify-content: space-between
+
+    .jumbotron
+      width: auto
+      height: 100vh
+      display: flex
+      flex-direction: column
+      justify-content: center
+      padding: 4rem
+      margin: 0
+      border-width: 0 4px
+
+      .big-name
+        font-size: 3rem
+        margin-bottom: 1rem
+      .job-title
+        font-size: 1.5rem
+
+    .links
+      width: 400px
+      max-width: none
+      min-width: 0
+      margin: auto
+
+      a
+        padding: 1.5rem
+
+        &:hover
+          border-color: lighten($secondary-color, 20)
+          color: $primary-color
+          background-color: rgba(#888, 0.1)
+          @include ease-out
+
+      .small-links a
+        padding: 2rem
+
+        &:hover
+          border-color: lighten($primary-color, 20)
+          color: $secondary-color

@@ -1,3 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,700&display=swap");
+body#Home {
+  z-index: -1;
+  overflow: hidden;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+body#Home #page-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body#Home .jumbotron {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.8);
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: #D90368;
+}
+body#Home .jumbotron .big-name {
+  font-weight: normal;
+  font-size: 2.2rem;
+}
+body#Home .jumbotron .job-title {
+  color: #5C9EAD;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+body#Home .links {
+  min-width: 80vw;
+  max-width: 90vw;
+}
+body#Home .links a {
+  display: flex;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  border: 4px solid #5C9EAD;
+  background: rgba(51, 51, 51, 0.5);
+  margin-bottom: 2rem;
+}
+body#Home .links a svg {
+  width: 50px;
+  height: 50px;
+}
+body#Home .links a p {
+  display: inline-block;
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5C9EAD;
+}
+body#Home .links .small-links {
+  display: flex;
+  justify-content: space-between;
+}
+body#Home .links .small-links a {
+  flex-direction: column;
+  border: 4px solid #D90368;
+  padding: 1.5rem 0;
+  width: 46%;
+}
+body#Home .links .small-links a svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.5rem;
+}
+body#Home .links .small-links a p {
+  color: #fc469c;
+  margin: 0;
+}
 
+@media screen and (min-width: 600px) {
+  body#Home {
+    text-align: left;
+  }
+  body#Home .jumbotron {
+    margin-bottom: 3rem;
+    padding-left: 15vw;
+  }
+  body#Home .jumbotron .big-name {
+    font-size: 2.5rem;
+  }
+  body#Home .links {
+    min-width: 70vw;
+  }
+  body#Home .links a {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body#Home #page-main {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body#Home .jumbotron {
+    width: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    margin: 0;
+    border-width: 0 4px;
+  }
+  body#Home .jumbotron .big-name {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  body#Home .jumbotron .job-title {
+    font-size: 1.5rem;
+  }
+  body#Home .links {
+    width: 400px;
+    max-width: none;
+    min-width: 0;
+    margin: auto;
+  }
+  body#Home .links a {
+    padding: 1.5rem;
+  }
+  body#Home .links a:hover {
+    border-color: #fc469c;
+    color: #5C9EAD;
+    background-color: rgba(136, 136, 136, 0.1);
+    transition: all 0.3s ease-out;
+  }
+  body#Home .links .small-links a {
+    padding: 2rem;
+  }
+  body#Home .links .small-links a:hover {
+    border-color: #a0c6cf;
+    color: #D90368;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body#Home .jumbotron .big-name {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  body#Home .jumbotron .job-title {
+    font-size: 1.8rem;
+  }
+  body#Home .links {
+    width: 500px;
+  }
+  body#Home .links a {
+    padding: 2rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */

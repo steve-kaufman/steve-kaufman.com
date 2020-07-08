@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "concurrently": "^5.2.0",
-    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.26.10",
     "serve": "^11.3.2"
   },
@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently 'yarn sass' 'yarn pug' 'yarn serve'",
     "sass": "sass --watch sass/index.sass:public/css/index.css",
-    "pug": "pug --watch ./templates -o ./public",
+    "pug": "pug --watch ./pug/pages -o ./public",
     "serve": "serve public"
   },
   "repository": {

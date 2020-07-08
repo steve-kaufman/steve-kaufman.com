@@ -1,0 +1,29 @@
+extends ../layout
+
+block vars
+  - var title = "Home"
+
+block content
+  div.jumbotron
+    // hr
+    h1.big-name Steve 
+      span.lastname Kaufman
+    // hr
+    p.job-title Web Developer
+
+  div.links
+    a(href="https://github.com/steve-kaufman")
+      span.iconify(data-icon="zmdi:github" data-inline="false")
+      p steve-kaufman
+    a(href="https://www.linkedin.com/in/steven-kaufman-4828b31a2/")
+      span.iconify(data-icon="zmdi:linkedin-box" data-inline="false")
+      p steven-kaufman
+    div.small-links
+      a(href="/projects")
+        span.iconify(data-icon="zmdi:tv" data-inline="false")
+        p Demos
+
+      a(href="/about")
+        span.iconify(data-icon="zmdi:account-o" data-inline="false")
+        p About Me
+        
