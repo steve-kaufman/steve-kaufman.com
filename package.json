@@ -15,7 +15,10 @@
     "dev": "concurrently 'yarn sass' 'yarn pug' 'yarn serve'",
     "sass": "sass --watch sass/index.sass:public/css/index.css",
     "pug": "pug --watch ./pug/pages -o ./public",
-    "serve": "serve public"
+    "serve": "serve public",
+    "build:sass": "sass sass/index.sass:public/css/index.css",
+    "build:pug": "pug ./pug/pages -o ./public",
+    "build": "yarn build:sass && yarn build:pug"
   },
   "repository": {
     "type": "git",
