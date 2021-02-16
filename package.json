@@ -11,7 +11,6 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently 'yarn sass' 'yarn pug' 'yarn serve'",
     "sass": "sass --watch sass/index.sass:public/css/index.css",
     "pug": "pug --watch ./pug/pages -o ./public",
