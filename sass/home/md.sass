@@ -1,20 +1,15 @@
 $padding: 15vw
 
-body#Home
-  @include md
+@mixin md
+  .jumbotron
+    margin-bottom: 3rem
+    padding-left: $padding
 
-    text-align: left
-    
-    .jumbotron
+    .big-name
+      font-size: 2.5rem
+
+  .links
+    min-width: 100vw - $padding * 2
+
+    a
       margin-bottom: 3rem
-      padding-left: $padding
-
-      .big-name
-        font-size: 2.5rem
-
-    .links
-      min-width: 100vw - $padding * 2
-
-      a
-        margin-bottom: 3rem
-

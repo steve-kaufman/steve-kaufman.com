@@ -1,0 +1,16 @@
+@use '../layout'
+@use '../breakpoints'
+
+@import 'home'
+
+body
+  @include layout.sm
+
+  @include breakpoints.md
+    @include layout.md
+
+  @include breakpoints.lg
+    @include layout.lg
+
+  @include breakpoints.xl
+    @include layout.xl

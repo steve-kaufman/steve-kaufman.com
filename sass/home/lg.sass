@@ -1,44 +1,46 @@
-body#Home
-  @include lg
-    #page-main
-      height: 100vh
-      flex-direction: row
-      justify-content: space-between
+@use '../colors'
+@use '../transitions'
 
-    .jumbotron
-      width: auto
-      height: 100vh
-      display: flex
-      flex-direction: column
-      justify-content: center
-      padding: 4rem
-      margin: 0
-      border-width: 0 4px
+@mixin lg
+  #page-main
+    height: 100vh
+    flex-direction: row
+    justify-content: space-between
 
-      .big-name
-        font-size: 3rem
-        margin-bottom: 1rem
-      .job-title
-        font-size: 1.5rem
+  .jumbotron
+    width: auto
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    padding: 4rem
+    margin: 0
+    border-width: 0 4px
 
-    .links
-      width: 400px
-      max-width: none
-      min-width: 0
-      margin: auto
+    .big-name
+      font-size: 3rem
+      margin-bottom: 1rem
+    .job-title
+      font-size: 1.5rem
 
-      a
-        padding: 1.5rem
+  .links
+    width: 400px
+    max-width: none
+    min-width: 0
+    margin: auto
 
-        &:hover
-          border-color: lighten($secondary-color, 20)
-          color: $primary-color
-          background-color: rgba(#888, 0.1)
-          @include ease-out
+    a
+      padding: 1.5rem
 
-      .small-links a
-        padding: 2rem
+      &:hover
+        border-color: lighten(colors.$secondary-color, 20)
+        color: colors.$primary-color
+        background-color: rgba(#888, 0.1)
+        @include transitions.ease-out
 
-        &:hover
-          border-color: lighten($primary-color, 20)
-          color: $secondary-color
+    .small-links a
+      padding: 2rem
+
+      &:hover
+        border-color: lighten(colors.$primary-color, 20)
+        color: colors.$secondary-color

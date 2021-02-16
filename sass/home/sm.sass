@@ -1,49 +1,25 @@
 $home-image: url("https://ourcodeworld.com/public-media/articles/articleocw-5d07e6b3790af.jpg")
+@use '../colors'
 
-body#Home
-  // background: $home-image
-  // background-size: cover
-  // background-attachment: fixed
-  z-index: -1
+@mixin sm
   overflow: hidden
-  background: #222
-
-  color: white
-  text-align: center
-
-  // &::after
-  //   content: ''
-  //   position: absolute
-  //   left: 0
-  //   top: 0
-  //   filter: blur(4px)
-  //   width: 100%
-  //   height: 100%
-  //   background: rgba(#222, 0.9)
-  //   z-index: -1
-
-  #page-main
-    display: flex
-    flex-direction: column
-    align-items: center
 
   .jumbotron
     margin-top: 1rem
     margin-bottom: 2rem
     padding: 2rem
     width: 100%
-    // background: rgba(darken($secondary-color, 30), 0.5)
     background: rgba(#333, 0.8)
     border-width: 2px 0
     border-style: solid
-    border-color: $secondary-color
+    border-color: colors.$secondary-color
 
     .big-name
       font-weight: normal
       font-size: 2.2rem
 
     .job-title
-      color: $primary-color
+      color: colors.$primary-color
       font-weight: bold
       font-size: 1.2rem
 
@@ -57,7 +33,7 @@ body#Home
       justify-content: space-between
       align-items: center
       border-radius: 1rem
-      border: 4px solid $primary-color
+      border: 4px solid colors.$primary-color
       background: rgba(#333, 0.5)
       margin-bottom: 2rem
 
@@ -69,15 +45,15 @@ body#Home
         margin-left: 1.5rem
         font-size: 1.2rem
         font-weight: bold
-        color: $primary-color
+        color: colors.$primary-color
 
     .small-links
       display: flex
       justify-content: space-between
 
-      a 
+      a
         flex-direction: column
-        border: 4px solid $secondary-color
+        border: 4px solid colors.$secondary-color
         padding: 1.5rem 0
         width: 46%
 
@@ -87,7 +63,6 @@ body#Home
           margin-bottom: 0.5rem
 
         p
-          color: lighten($secondary-color, 20)
+          color: lighten(colors.$secondary-color, 20)
           // font-weight: bold
           margin: 0
-
