@@ -5,19 +5,19 @@
   "main": "index.js",
   "dependencies": {
     "concurrently": "^5.2.0",
+    "pug": "^3.0.2",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.26.10",
     "serve": "^11.3.2"
   },
-  "devDependencies": {},
   "scripts": {
-    "dev": "concurrently 'yarn sass' 'yarn pug' 'yarn serve'",
+    "dev": "concurrently 'npm run sass' 'npm run pug' 'npm run serve'",
     "sass": "sass --watch sass/index.sass:public/css/index.css",
     "pug": "pug --watch ./pug/pages -o ./public",
     "serve": "serve public",
     "build:sass": "sass sass/index.sass:public/css/index.css",
     "build:pug": "pug ./pug/pages -o ./public",
-    "build": "yarn build:sass && yarn build:pug"
+    "build": "npm run build:sass && npm run build:pug"
   },
   "repository": {
     "type": "git",
