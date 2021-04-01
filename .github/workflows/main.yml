@@ -22,7 +22,7 @@ jobs:
         run: docker login -u $DOCKER_USER -p $DOCKER_PASS
       
       - name: Build
-        run: cd frontend && docker build -t stevekaufman/website .
+        run: docker build -t stevekaufman/website .
       
       - name: Push
         run: docker push stevekaufman/website
