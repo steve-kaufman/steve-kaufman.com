@@ -1,8 +1,15 @@
+@use '../colors'
+
 @mixin sm
   background: #222
   color: white
 
-  #page-main
-    display: flex
-    flex-direction: column
-    align-items: center
+  .page-header
+    padding: 1.5rem 3rem
+    width: 100%
+    background: colors.$primary-color
+
+  .section-header
+    padding: 0.5rem 1rem
+    background: #333
+    margin-bottom: 1rem

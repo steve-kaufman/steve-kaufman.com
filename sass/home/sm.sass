@@ -1,4 +1,3 @@
-$home-image: url("https://ourcodeworld.com/public-media/articles/articleocw-5d07e6b3790af.jpg")
 @use '../colors'
 
 @mixin sm
@@ -23,6 +22,11 @@ $home-image: url("https://ourcodeworld.com/public-media/articles/articleocw-5d07
       color: colors.$primary-color
       font-weight: bold
       font-size: 1.2rem
+
+  .page-main
+    display: flex
+    flex-direction: column
+    align-items: center
 
   .links
     min-width: 80vw

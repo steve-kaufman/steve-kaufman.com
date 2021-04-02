@@ -1,0 +1,25 @@
+extends ../layout
+
+block vars
+  - var title = "Projects"
+
+block content 
+  header.page-header
+    h1 Projects
+
+  main.page-main 
+    header.section-header 
+      h3 My Projects
+
+    section.projects
+      article.card.project-card
+        header.card-header EShop
+        .project-img
+          img(src="/images/eshop.png")
+          section.card-links
+            a(href="https://steve-kaufman.com/eshop").card-link
+              span.iconify(data-icon="zmdi:tv" data-inline="false")
+              //- p See it here
+            a(href="https://github.com/steve-kaufman/eshop").card-link
+              span.iconify(data-icon="zmdi:github" data-inline="false")
+              //- p See it here
