@@ -1,4 +1,7 @@
 @use '../projects'
+@use '../breakpoints'
 
 body#Projects
   @include projects.sm
+  @include breakpoints.md
+    @include projects.md
