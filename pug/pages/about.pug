@@ -3,6 +3,43 @@ extends ../layout
 block vars 
   - var title = "About"
 
+include ../mixins/card.pug
+
 block content 
-  .jumbotron 
-    h1 About Me
+  header.header 
+    h1 About
+
+  main.page-main
+    header.section-header
+      h3 Me
+    section.cards
+      +card('Background')
+        p I'm a 17 year-old self-taught web devloper in Minneapolis, Minnesota.
+      +card('Goal')
+        p I'm looking for a summer internship to give me professional experience 
+          | during my college career.
+      +card('Education')
+        p I graduate high school this May (2021), but I'm enrolled 
+          | in college classes at the University of Minnesota full time.
+
+    hr
+    header.section-header
+      h3 This Website
+    section.cards
+      +card('Technologies')
+        p This website is made with the templating language Pug.js and Sass, a CSS preprocessor
+      +card('Build Process')
+        p Both Pug.js files and Sass files are compiled down to static HTML and CSS 
+          | using simple npm scripts in the package.json file.
+      +card('Deployment')
+        p I use GitHub actions to automatically build my site into a very 
+          | very small docker image (<4MB) on push.
+        p It then sends a trigger to my DigitalOcean droplet to pull the new image 
+          | and restart the container.
+
+    hr
+    +card('Links')
+      p The GitHub repo for this site is at: 
+        a(href="https://github.com/steve-kaufman/steve-kaufman.com" target="_blank") github.com/steve-kaufman/steve-kaufman.com
+      p If you don't believe me that the docker image is small: 
+        a(href="https://hub.docker.com/repository/docker/stevekaufman/website" target="_blank") here's the link

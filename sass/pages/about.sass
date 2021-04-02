@@ -1,0 +1,11 @@
+@use '../about'
+@use '../breakpoints'
+
+body#About
+  @include about.sm
+  @include breakpoints.md
+    @include about.md
+  @include breakpoints.lg
+    @include about.lg
+  @include breakpoints.xl
+    @include about.xl
