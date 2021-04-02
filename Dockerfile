@@ -8,6 +8,7 @@ RUN npm i
 
 COPY pug pug
 COPY sass sass
+COPY public public
 
 RUN npm run build
 
