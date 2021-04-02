@@ -1,5 +1,4 @@
 node_modules
-public/css
-public/*.html
+public/
 yarn.lock
 package-lock.json
