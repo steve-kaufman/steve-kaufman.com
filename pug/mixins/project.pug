@@ -1,0 +1,10 @@
+mixin project(name, imageLink, demoLink, githubLink)
+  article.card.project-card
+    header.card-header= name
+    .project-img
+      img(src=imageLink)
+      section.card-links
+        a(href=demoLink).card-link
+          span.iconify(data-icon="zmdi:tv" data-inline="false")
+        a(href=githubLink).card-link
+          span.iconify(data-icon="zmdi:github" data-inline="false")
