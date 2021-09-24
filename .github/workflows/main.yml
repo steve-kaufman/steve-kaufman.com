@@ -34,4 +34,4 @@ jobs:
 
     steps:
       - name: Trigger Deploy
-        run: "curl -H 'ci-access-key: ${{ secrets.CI_ACCESS_KEY }}' https://steve-kaufman.com/deploy?image=stevekaufman/website"
+        run: "curl -H 'ci-access-key: ${{ secrets.CI_ACCESS_KEY }}' https://steve-kaufman.com/deploy/?image=stevekaufman/website"
